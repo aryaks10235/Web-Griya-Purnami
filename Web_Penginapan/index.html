@@ -2158,22 +2158,20 @@
         <div class="nav-logo">Griya <span>Purnami</span></div>
         <ul class="nav-links">
             <li><a href="#galeri">Galeri</a></li>
-            <li><a href="#kamar">Kamar</a></li>
             <li><a href="#ketersediaan">Ketersediaan</a></li>
             <li><a href="#fasilitas">Fasilitas</a></li>
             <li><a href="#kontak">Kontak</a></li>
         </ul>
-        <a class="nav-book" href="#kamar">Pesan Sekarang</a>
+        <a class="nav-book" href="#ketersediaan">Pesan Sekarang</a>
     </nav>
 
     <!-- HERO -->
     <section class="hero">
         <div class="hero-left">
-            <h1>Homestay<br><em>Dengan Harga Terjangkau</em></h1>
-            <p class="hero-desc">Tersedia tiga kamar dengan nuansa hangat dan tenang <br> cocok untuk perjalanan wisata maupun
-                Transit di Yogyakarta.</p>
+            <h1>Sewa Rumah<br><em>Utuh yang Terjangkau</em></h1>
+            <p class="hero-desc">Sewa rumah utuh dengan 3 kamar tidur, cocok untuk keluarga atau rombongan hingga 8 orang. <br> Nyaman, lengkap, dan strategis di Yogyakarta.</p>
             <div class="hero-actions">
-                <a class="btn-primary" href="#kamar">Lihat Kamar</a>
+                <a class="btn-primary" href="#ketersediaan">Pesan Sekarang</a>
                 <a class="btn-outline" href="#galeri">Lihat Foto</a>
             </div>
         </div>
@@ -2186,8 +2184,8 @@
                 <div class="stat-label">Kamar Tidur</div>
             </div>
             <div class="stat">
-                <div class="stat-num" id="avail-count">3</div>
-                <div class="stat-label">Tersedia Hari Ini</div>
+                <div class="stat-num">8</div>
+                <div class="stat-label">Maks. Tamu</div>
             </div>
             <div class="stat">
                 <div class="stat-num">4.9</div>
@@ -2205,104 +2203,92 @@
         <div class="gallery-header">
             <div>
                 <div class="section-tag">Galeri Foto</div>
-                <h2 class="section-title">Jelajahi setiap <em>sudut</em> kamar</h2>
-                <p class="section-sub" style="margin-top:.5rem">Foto asli setiap kamar dan fasilitas. Klik gambar untuk
+                <h2 class="section-title">Jelajahi setiap <em>sudut</em> rumah</h2>
+                <p class="section-sub" style="margin-top:.5rem">Foto asli setiap area rumah. Klik gambar untuk
                     memperbesar.</p>
             </div>
         </div>
 
-        <!-- TAB PILIH KAMAR -->
+        <!-- TAB PILIH AREA -->
         <div class="gallery-room-tabs" id="galleryTabs">
-            <button class="gallery-room-tab active" data-tab="jati" onclick="switchRoomGallery('jati', this)">🛏 Kamar
-                Jasmine</button>
-            <button class="gallery-room-tab" data-tab="bambu" onclick="switchRoomGallery('bambu', this)">🌿 Kamar
-                Rose</button>
-            <button class="gallery-room-tab" data-tab="batik" onclick="switchRoomGallery('batik', this)">🎨 Kamar
-                Orchid</button>
-            <button class="gallery-room-tab" data-tab="fasilitas" onclick="switchRoomGallery('fasilitas', this)">✨
-                Fasilitas</button>
+            <button class="gallery-room-tab active" data-tab="ruangtamu" onclick="switchRoomGallery('ruangtamu', this)">🛋 Ruang Tamu</button>
+            <button class="gallery-room-tab" data-tab="kamartidur" onclick="switchRoomGallery('kamartidur', this)">🛏 Kamar Tidur</button>
+            <button class="gallery-room-tab" data-tab="dapur" onclick="switchRoomGallery('dapur', this)">🍳 Dapur & Ruang Makan</button>
+            <button class="gallery-room-tab" data-tab="kamarmandi" onclick="switchRoomGallery('kamarmandi', this)">🚿 Kamar Mandi</button>
+            <button class="gallery-room-tab" data-tab="taman" onclick="switchRoomGallery('taman', this)">🌿 Taman & Eksterior</button>
         </div>
 
-        <!-- PANEL: KAMAR JASMINE -->
-        <div class="gallery-panel active" id="panel-jati">
+        <!-- PANEL: RUANG TAMU -->
+        <div class="gallery-panel active" id="panel-ruangtamu">
             <div class="room-gallery-info">
                 <div class="room-gallery-color-dot" style="background:#c8a882"></div>
                 <div>
-                    <div class="room-gallery-name">Kamar Jasmine</div>
-                    <div class="room-gallery-type">Kamar Single Bed · 1 Ranjang</div>
+                    <div class="room-gallery-name">Ruang Tamu</div>
+                    <div class="room-gallery-type">Area utama untuk bersantai dan berkumpul</div>
                 </div>
-                <div class="room-gallery-price">Rp 150.000 / malam</div>
-                <div class="room-gallery-avail ok" id="avail-badge-jati">Tersedia Hari Ini</div>
-                <button class="btn-primary" style="padding:8px 20px;font-size:12px"
-                    onclick="openModal(1)">Pesan</button>
+                <div class="room-gallery-price" style="color:var(--brown3);font-size:1rem">Nyaman dan Luas</div>
             </div>
-            <div class="gallery-masonry" id="masonry-jati"></div>
+            <div class="gallery-masonry" id="masonry-ruangtamu"></div>
         </div>
 
-        <!-- PANEL: KAMAR ROSE -->
-        <div class="gallery-panel" id="panel-bambu">
+        <!-- PANEL: KAMAR TIDUR -->
+        <div class="gallery-panel" id="panel-kamartidur">
             <div class="room-gallery-info">
                 <div class="room-gallery-color-dot" style="background:#90a878"></div>
                 <div>
-                    <div class="room-gallery-name">Kamar Rose</div>
-                    <div class="room-gallery-type">Kamar Double Bed · 2 Ranjang + Balkon</div>
+                    <div class="room-gallery-name">Kamar Tidur</div>
+                    <div class="room-gallery-type">3 kamar dengan nuansa berbeda</div>
                 </div>
-                <div class="room-gallery-price">Rp 200.000 / malam</div>
-                <div class="room-gallery-avail ok" id="avail-badge-bambu">Tersedia Hari Ini</div>
-                <button class="btn-primary" style="padding:8px 20px;font-size:12px"
-                    onclick="openModal(2)">Pesan</button>
+                <div class="room-gallery-price" style="color:var(--brown3);font-size:1rem">Kamar Jasmine, Rose & Orchid</div>
             </div>
-            <div class="gallery-masonry" id="masonry-bambu"></div>
+            <div class="gallery-masonry" id="masonry-kamartidur"></div>
         </div>
 
-        <!-- PANEL: KAMAR ORCHID -->
-        <div class="gallery-panel" id="panel-batik">
+        <!-- PANEL: DAPUR -->
+        <div class="gallery-panel" id="panel-dapur">
             <div class="room-gallery-info">
                 <div class="room-gallery-color-dot" style="background:#b0a0c8"></div>
                 <div>
-                    <div class="room-gallery-name">Kamar Orchid</div>
-                    <div class="room-gallery-type">Kamar Deluxe · 2 Ranjang + Bathtub</div>
+                    <div class="room-gallery-name">Dapur & Ruang Makan</div>
+                    <div class="room-gallery-type">Lengkap dengan semua peralatan</div>
                 </div>
-                <div class="room-gallery-price">Rp 250.000 / malam</div>
-                <div class="room-gallery-avail no" id="avail-badge-batik">Terpesan</div>
-                <button class="btn-primary" style="padding:8px 20px;font-size:12px;opacity:0.4;">Penuh</button>
+                <div class="room-gallery-price" style="color:var(--brown3);font-size:1rem">Modern dan Fungsional</div>
             </div>
-            <div class="gallery-masonry" id="masonry-batik"></div>
+            <div class="gallery-masonry" id="masonry-dapur"></div>
         </div>
 
-        <!-- PANEL: FASILITAS -->
-        <div class="gallery-panel" id="panel-fasilitas">
+        <!-- PANEL: KAMAR MANDI -->
+        <div class="gallery-panel" id="panel-kamarmandi">
             <div class="room-gallery-info">
-                <div class="room-gallery-color-dot" style="background:var(--gold)"></div>
+                <div class="room-gallery-color-dot" style="background:#d4a574"></div>
                 <div>
-                    <div class="room-gallery-name">Fasilitas Umum</div>
-                    <div class="room-gallery-type">Ruang Tamu · Dapur · Taman · Area Parkir</div>
+                    <div class="room-gallery-name">Kamar Mandi</div>
+                    <div class="room-gallery-type">Bersih dan dilengkapi perlengkapan mandi</div>
                 </div>
-                <div class="room-gallery-price" style="color:var(--brown3);font-size:1rem">Tersedia untuk semua tamu
-                </div>
+                <div class="room-gallery-price" style="color:var(--brown3);font-size:1rem">Nyaman dan Higienis</div>
             </div>
-            <div class="gallery-masonry" id="masonry-fasilitas"></div>
+            <div class="gallery-masonry" id="masonry-kamarmandi"></div>
         </div>
-    </section>
 
-    <!-- KAMAR -->
-    <section id="kamar">
-        <div class="rooms-header">
-            <div>
-                <div class="section-tag">Pilihan Kamar</div>
-                <h2 class="section-title">Tiga kamar, tiga <em>karakter</em></h2>
+        <!-- PANEL: TAMAN & EKSTERIOR -->
+        <div class="gallery-panel" id="panel-taman">
+            <div class="room-gallery-info">
+                <div class="room-gallery-color-dot" style="background:var(--green)"></div>
+                <div>
+                    <div class="room-gallery-name">Taman & Eksterior</div>
+                    <div class="room-gallery-type">Area luar rumah yang indah</div>
+                </div>
+                <div class="room-gallery-price" style="color:var(--brown3);font-size:1rem">Strategis dan Asri</div>
             </div>
-            <p class="section-sub" style="max-width:340px">Setiap kamar dirancang dengan tema berbeda namun tetap
-                menghadirkan kenyamanan yang sama.</p>
+            <div class="gallery-masonry" id="masonry-taman"></div>
         </div>
-        <div class="rooms-grid" id="rooms-grid"></div>
     </section>
 
     <!-- KETERSEDIAAN -->
     <section id="ketersediaan">
         <div class="section-tag">Cek Ketersediaan</div>
         <h2 class="section-title">Pilih <em>tanggal</em> menginapmu</h2>
-        <p class="section-sub">Klik tanggal di kalender untuk melihat kamar mana yang tersedia hari itu.</p>
+        <p class="section-sub">Lihat kalender untuk mengetahui rumah tersedia atau tidak pada tanggal pilihan.</p>
         <div class="avail-grid">
             <div class="calendar-wrap reveal">
                 <div class="cal-header">
@@ -2325,10 +2311,7 @@
                         <div class="legend-dot" style="background:#60d090"></div>Tersedia
                     </div>
                     <div class="legend-item">
-                        <div class="legend-dot" style="background:rgba(200,169,110,0.4)"></div>Sebagian
-                    </div>
-                    <div class="legend-item">
-                        <div class="legend-dot" style="background:rgba(192,80,60,0.2)"></div>Penuh
+                        <div class="legend-dot" style="background:rgba(192,80,60,0.2)"></div>Terpesan
                     </div>
                     <div class="legend-item">
                         <div class="legend-dot" style="background:var(--gold2)"></div>Hari ini
@@ -2337,7 +2320,7 @@
             </div>
             <div class="avail-result reveal" id="avail-result">
                 <div class="avail-title" id="avail-date-title">Pilih tanggal</div>
-                <p class="avail-sub" id="avail-date-sub">Klik tanggal di kalender untuk melihat ketersediaan kamar.</p>
+                <p class="avail-sub" id="avail-date-sub">Klik tanggal di kalender untuk melihat ketersediaan rumah.</p>
                 <div id="avail-cards"></div>
             </div>
         </div>
@@ -2528,8 +2511,8 @@
         <div class="modal">
             <button class="modal-close" id="modal-close">&#10005;</button>
             <div id="modal-form-wrap">
-                <div class="modal-title" id="modal-room-name">Pesan Kamar</div>
-                <p class="modal-sub" id="modal-room-price">—</p>
+                <div class="modal-title">Pesan Griya Purnami</div>
+                <p class="modal-sub">Sewa rumah utuh dengan 3 kamar tidur - Rp 500.000/malam</p>
                 <div class="form-row">
                     <div class="form-group"><label class="form-label">Nama Lengkap</label><input class="form-input"
                             id="f-name" type="text" placeholder="Budi Santoso"></div>
@@ -2545,17 +2528,20 @@
                 <div class="form-group"><label class="form-label">Jumlah Tamu</label><select class="form-select"
                         id="f-guests">
                         <option value="1">1 orang</option>
-                        <option value="2" selected>2 orang</option>
+                        <option value="2">2 orang</option>
                         <option value="3">3 orang</option>
                         <option value="4">4 orang</option>
                         <option value="5">5 orang</option>
+                        <option value="6">6 orang</option>
+                        <option value="7">7 orang</option>
+                        <option value="8" selected>8 orang</option>
                     </select></div>
                 <div class="form-group"><label class="form-label">Catatan (opsional)</label><input class="form-input"
                         id="f-note" type="text" placeholder="Permintaan khusus, jam tiba, dll."></div>
                 <div class="modal-summary" id="modal-summary">
-                    <div class="summary-row"><span>Kamar</span><span id="s-room">—</span></div>
+                    <div class="summary-row"><span>Harga/malam</span><span id="s-price">Rp 500.000</span></div>
                     <div class="summary-row"><span>Durasi</span><span id="s-nights">—</span></div>
-                    <div class="summary-row"><span>Total Estimasi</span><span id="s-total">—</span></div>
+                    <div class="summary-row"><span>Total</span><span id="s-total">—</span></div>
                 </div>
                 <button class="modal-submit" id="modal-submit">Konfirmasi Pemesanan via WA</button>
             </div>
@@ -2572,47 +2558,55 @@
 
     <script>
         // ─── DATA ─────────────────────────────────────────
-        const ROOMS = [
-            { id: 1, name: 'Kamar Jasmine', type: 'Kamar Single Bed · 1 Ranjang', price: 150000, priceLabel: 'Rp 150.000 / malam', features: ['Kamar Mandi Dalam'], image: 'image/kamar_single.JPG', desc: 'Kamar dengan nuansa kayu jati alami. Cocok untuk solo traveler atau pasangan yang mencari ketenangan.', colorClass: 'r1', available: true, tab: 'jati' },
-            { id: 2, name: 'Kamar Rose', type: 'Kamar Double Bed · 1 Ranjang', price: 200000, priceLabel: 'Rp 200.000 / malam', features: ['Balkon', 'Kamar Mandi'], image: 'image/kamar_double2.JPG', desc: 'Sentuhan bambu hijau yang menyegarkan. Dilengkapi balkon kecil dengan view taman belakang.', colorClass: 'r2', available: true, tab: 'bambu' },
-            { id: 3, name: 'Kamar Orchid', type: 'Kamar Suite · 2 Ranjang', price: 250000, priceLabel: 'Rp 250.000 / malam', features: [], image: 'image/kamar_deluxe.JPG', desc: 'Terinspirasi motif batik Jogja. Kamar terluas dengan bathtub dan dekorasi seni lokal.', colorClass: 'r3', available: false, tab: 'batik' },
-        ];
+        const RUMAH = {
+            name: 'Griya Purnami',
+            type: 'Rumah Utuh · 3 Kamar Tidur',
+            price: 500000,
+            priceLabel: 'Rp 500.000 / malam',
+            desc: 'Sewa rumah utuh untuk keluarga atau rombongan hingga 8 orang dengan fasilitas lengkap.'
+        };
 
-        // ─── GALLERY DATA (SVG Placeholders siap ganti dengan URL foto nyata) ─────
-        // Format: { src: 'url-foto.jpg', label: 'Keterangan', span: 'normal|tall|wide' }
-        // Ganti src dengan path foto asli Anda. Contoh: src: 'foto/jati-01.jpg'
+        // ─── GALLERY DATA ─────
         const GALLERY_DATA = {
-            jati: [
-                { src: 'image/kamar_single.JPG', label: 'Tampak Depan Kamar', span: 'wide', icon: 'bed', bg: '#e8ddc8' },
+            ruangtamu: [
+                { src: 'image/ruang_tengah.JPG', label: 'Ruang Tamu Utama', span: 'wide', icon: 'lounge', bg: '#ede0c8' },
+                { src: 'image/ruang_tengah.JPG', label: 'Sofa Nyaman', span: 'tall', icon: 'sofa', bg: '#e4d8c0' },
+                { src: 'image/depan_rumah.JPG', label: 'Area Istirahat', span: 'normal', icon: 'lounge', bg: '#d0dcc8' },
+                { src: 'image/depan_rumah.JPG', label: 'Pencahayaan Alami', span: 'normal', icon: 'window', bg: '#d8d0c4' },
+                { src: 'image/ruang_tengah.JPG', label: 'Dekorasi Elegan', span: 'normal', icon: 'interior', bg: '#e0d4bc' },
+                { src: 'image/depan_rumah.JPG', label: 'Koleksi Seni Lokal', span: 'normal', icon: 'art', bg: '#dcd0c0' },
+            ],
+            kamartidur: [
+                { src: 'image/kamar_single.JPG', label: 'Kamar Jasmine', span: 'wide', icon: 'bed', bg: '#e8ddc8' },
+                { src: 'image/kamar_double.JPG', label: 'Kamar Rose', span: 'wide', icon: 'bed', bg: '#d4e0d0' },
+                { src: 'image/kamar_deluxe.JPG', label: 'Kamar Orchid', span: 'wide', icon: 'suite', bg: '#d8cce4' },
                 { src: 'image/kamar_single.JPG', label: 'Ranjang Kayu Jati', span: 'tall', icon: 'bed', bg: '#ddd0b8' },
-                { src: 'image/kamar_mandi.JPG', label: 'Sudut Ruangan', span: 'normal', icon: 'interior', bg: '#e4d8c4' },
-                { src: 'image/kamar_mandi2.JPG', label: 'Kamar Mandi', span: 'normal', icon: 'bath', bg: '#d8ccb8' },
-                { src: 'image/depan_rumah.JPG', label: 'Meja Kerja', span: 'normal', icon: 'desk', bg: '#e0d4c0' },
-                { src: 'image/ruang_tengah.JPG', label: 'Jendela & Pencahayaan', span: 'normal', icon: 'window', bg: '#dcd0bc' },
-            ],
-            bambu: [
-                { src: 'image/kamar_double.JPG', label: 'Tampak Depan Kamar', span: 'wide', icon: 'bed', bg: '#d4e0d0' },
                 { src: 'image/kamar_double2.JPG', label: 'Balkon & Taman', span: 'tall', icon: 'garden', bg: '#c8d8c4' },
-                { src: 'image/kamar_mandi.JPG', label: 'Ranjang & Dekorasi', span: 'normal', icon: 'bed', bg: '#ccdcc8' },
-                { src: 'image/kamar_mandi2.JPG', label: 'Kamar Mandi', span: 'normal', icon: 'bath', bg: '#c4d4c0' },
-                { src: 'image/depan_rumah.JPG', label: 'Sudut Bambu', span: 'normal', icon: 'plant', bg: '#d0dcc8' },
-                { src: 'image/ruang_tengah.JPG', label: 'View Taman', span: 'normal', icon: 'garden', bg: '#c8d8bc' },
+                { src: 'image/kamar_deluxe2.JPG', label: 'Bathtub Premium', span: 'tall', icon: 'bath', bg: '#ccc0d8' },
             ],
-            batik: [
-                { src: 'image/kamar_deluxe.JPG', label: 'Tampak Depan Kamar', span: 'wide', icon: 'suite', bg: '#d8cce4' },
-                { src: 'image/kamar_deluxe2.JPG', label: 'Bathtub & Dekorasi', span: 'tall', icon: 'bath', bg: '#ccc0d8' },
-                { src: 'image/kamar_deluxe3.JPG', label: 'Motif Batik Dinding', span: 'normal', icon: 'art', bg: '#d4c8e0' },
-                { src: 'image/kamar_mandi.JPG', label: 'Area Duduk / Sofa', span: 'normal', icon: 'sofa', bg: '#c8bcdc' },
-                { src: 'image/kamar_mandi2.JPG', label: 'Dua Ranjang', span: 'normal', icon: 'bed', bg: '#d0c4dc' },
-                { src: 'image/ruang_tengah.JPG', label: 'Koleksi Seni Lokal', span: 'normal', icon: 'art', bg: '#ccc0d8' },
+            dapur: [
+                { src: 'image/depan_rumah.JPG', label: 'Dapur Lengkap', span: 'wide', icon: 'kitchen', bg: '#e8ddc8' },
+                { src: 'image/depan_rumah.JPG', label: 'Ruang Makan', span: 'tall', icon: 'lounge', bg: '#ddd0b8' },
+                { src: 'image/depan_rumah.JPG', label: 'Peralatan Memasak', span: 'normal', icon: 'kitchen', bg: '#e4d8c4' },
+                { src: 'image/depan_rumah.JPG', label: 'Lemari Es Modern', span: 'normal', icon: 'interior', bg: '#d8ccb8' },
+                { src: 'image/depan_rumah.JPG', label: 'Meja Makan Luas', span: 'normal', icon: 'desk', bg: '#e0d4c0' },
+                { src: 'image/depan_rumah.JPG', label: 'Perlengkapan Dapur', span: 'normal', icon: 'kitchen', bg: '#dcd0bc' },
             ],
-            fasilitas: [
-                { src: 'image/ruang_tengah.JPG', label: 'Ruang Tamu Bersama', span: 'wide', icon: 'lounge', bg: '#ede0c8' },
-                { src: 'image/depan_rumah.JPG', label: 'Dapur & Area Sarapan', span: 'tall', icon: 'kitchen', bg: '#e4d8c0' },
-                { src: 'image/depan_rumah2.JPG', label: 'Taman Belakang', span: 'normal', icon: 'garden', bg: '#d0dcc8' },
-                { src: 'image/kamar_mandi.JPG', label: 'Area Parkir', span: 'normal', icon: 'parking', bg: '#d8d0c4' },
-                { src: 'image/kamar_.png', label: 'Pintu Masuk', span: 'normal', icon: 'door', bg: '#e0d4bc' },
-                { src: 'image/depan_rumah2.JPG', label: 'Spot Foto Favorit', span: 'normal', icon: 'camera', bg: '#dcd0c0' },
+            kamarmandi: [
+                { src: 'image/kamar_mandi.JPG', label: 'Kamar Mandi 1', span: 'wide', icon: 'bath', bg: '#e8ddc8' },
+                { src: 'image/kamar_mandi2.JPG', label: 'Kamar Mandi 2', span: 'tall', icon: 'bath', bg: '#ddd0b8' },
+                { src: 'image/kamar_mandi.JPG', label: 'Shower Modern', span: 'normal', icon: 'bath', bg: '#e4d8c4' },
+                { src: 'image/kamar_mandi2.JPG', label: 'Cermin & Sink', span: 'normal', icon: 'interior', bg: '#d8ccb8' },
+                { src: 'image/kamar_mandi.JPG', label: 'Perlengkapan Mandi', span: 'normal', icon: 'bath', bg: '#e0d4c0' },
+                { src: 'image/kamar_mandi2.JPG', label: 'Handuk & Toiletries', span: 'normal', icon: 'interior', bg: '#dcd0bc' },
+            ],
+            taman: [
+                { src: 'image/depan_rumah.JPG', label: 'Depan Rumah', span: 'wide', icon: 'garden', bg: '#d4e0d0' },
+                { src: 'image/depan_rumah.JPG', label: 'Taman Belakang', span: 'tall', icon: 'garden', bg: '#c8d8c4' },
+                { src: 'image/ruang_tengah.JPG', label: 'Area Parkir', span: 'normal', icon: 'parking', bg: '#ccdcc8' },
+                { src: 'image/depan_rumah.JPG', label: 'Pintu Masuk', span: 'normal', icon: 'door', bg: '#c4d4c0' },
+                { src: 'image/ruang_tengah.JPG', label: 'Spot Foto Favorit', span: 'normal', icon: 'camera', bg: '#d0dcc8' },
+                { src: 'image/depan_rumah.JPG', label: 'Eksterior Asri', span: 'normal', icon: 'garden', bg: '#c8d8bc' },
             ],
         };
 
@@ -2685,10 +2679,10 @@
         }
 
         // ─── LIGHTBOX STATE ───────────────────────────────
-        let glbCurrentTab = 'jati';
+        let glbCurrentTab = 'ruangtamu';
         let glbCurrentIdx = 0;
 
-        const ROOM_NAMES = { jati: 'Kamar Jasmine', bambu: 'Kamar Rose', batik: 'Kamar Orchid', fasilitas: 'Fasilitas Umum' };
+        const ROOM_NAMES = { ruangtamu: 'Ruang Tamu', kamartidur: 'Kamar Tidur', dapur: 'Dapur & Ruang Makan', kamarmandi: 'Kamar Mandi', taman: 'Taman & Eksterior' };
 
         function openLightbox(tabKey, idx) {
             glbCurrentTab = tabKey;
@@ -2768,7 +2762,7 @@
         });
 
         // ─── RENDER ROOMS ─────────────────────────────────
-        const BOOKINGS = {};
+        const BOOKINGS = [];
         const today = new Date();
         function dateStr(d) {
             const y = d.getFullYear();
@@ -2777,57 +2771,14 @@
             return y + '-' + m + '-' + dd;
         }
         function addDays(d, n) { const x = new Date(d); x.setDate(x.getDate() + n); return x; }
-        BOOKINGS[3] = [dateStr(addDays(today, 1)), dateStr(addDays(today, 2))];
-        BOOKINGS[1] = [dateStr(addDays(today, 3)), dateStr(addDays(today, 4))];
-        BOOKINGS[2] = [dateStr(addDays(today, 6)), dateStr(addDays(today, 7))];
+        // Set booking dates for demo
+        BOOKINGS.push(dateStr(addDays(today, 1)));
+        BOOKINGS.push(dateStr(addDays(today, 2)));
+        BOOKINGS.push(dateStr(addDays(today, 6)));
+        BOOKINGS.push(dateStr(addDays(today, 7)));
 
-        function isBooked(roomId, dateS) { return (BOOKINGS[roomId] || []).includes(dateS); }
-        function roomAvailOn(roomId, dateS) { return !isBooked(roomId, dateS); }
-        function availCountToday() { const d = dateStr(today); return ROOMS.filter(r => roomAvailOn(r.id, d)).length; }
-
-        function renderRooms() {
-            const grid = document.getElementById('rooms-grid');
-            grid.innerHTML = ROOMS.map(r => {
-                const avail = roomAvailOn(r.id, dateStr(today));
-                return `
-            <div class="room-card reveal">
-                <div class="room-visual ${r.colorClass}">
-                    <img src="${r.image}" alt="${r.name}" style="width:100%;height:100%;object-fit:cover;display:block;">
-                    <div class="room-badge ${avail ? 'badge-available' : 'badge-booked'}">${avail ? 'Tersedia Hari Ini' : 'Terpesan'}</div>
-                </div>
-                <div class="room-body">
-                    <div class="room-name">${r.name}</div>
-                    <div class="room-type">${r.type}</div>
-                    <div class="room-features">${r.features.map(f => `<span class="feat">${f}</span>`).join('')}</div>
-                    <div class="room-price"><span class="price-num">Rp ${(r.price / 1000).toFixed(0)}k</span><span class="price-unit">/ malam</span></div>
-                    <p class="room-desc">${r.desc}</p>
-                    <div class="room-btn-group">
-                        <button class="room-btn${avail ? '' : ' booked'}" onclick="${avail ? `openModal(${r.id})` : 'void(0)'}">
-                            ${avail ? 'Pesan Kamar Ini' : 'Tidak Tersedia'}
-                        </button>
-                        <button class="room-btn-gallery" title="Lihat Foto" onclick="scrollToGallery('${r.tab}')">📷</button>
-                    </div>
-                </div>
-            </div>`;
-            }).join('');
-            document.getElementById('avail-count').textContent = availCountToday();
-        }
-
-        function scrollToGallery(tabKey) {
-            const tab = document.querySelector(`[data-tab="${tabKey}"]`);
-            if (tab) { switchRoomGallery(tabKey, tab); }
-            document.getElementById('galeri').scrollIntoView({ behavior: 'smooth' });
-        }
-
-        function roomIllus(r) {
-            const svgs = {
-                1: `<svg width="140" height="120" viewBox="0 0 140 120" fill="none"><rect x="10" y="60" width="120" height="50" fill="#c8a882" rx="4"/><rect x="20" y="40" width="100" height="30" fill="#b89060" rx="3"/><rect x="30" y="30" width="35" height="30" fill="#d4b48a" rx="2"/><rect x="75" y="30" width="35" height="30" fill="#d4b48a" rx="2"/><rect x="50" y="65" width="40" height="45" fill="#8b6248" rx="2"/><circle cx="85" cy="88" r="3" fill="#c8a96e"/><rect x="20" y="42" width="16" height="12" fill="#a89878" opacity="0.5" rx="1"/><rect x="104" y="42" width="16" height="12" fill="#a89878" opacity="0.5" rx="1"/></svg>`,
-                2: `<svg width="140" height="120" viewBox="0 0 140 120" fill="none"><rect x="10" y="55" width="120" height="55" fill="#b8c8a8" rx="4"/><rect x="25" y="35" width="90" height="28" fill="#90a878" rx="3"/><rect x="15" y="60" width="110" height="8" fill="#789860" opacity="0.4" rx="2"/><rect x="45" y="63" width="50" height="47" fill="#6b8c58" rx="2"/><circle cx="91" cy="87" r="3" fill="#a8c890"/><rect x="22" y="38" width="14" height="10" fill="#c8e8b8" opacity="0.5" rx="1"/><rect x="104" y="38" width="14" height="10" fill="#c8e8b8" opacity="0.5" rx="1"/></svg>`,
-                3: `<svg width="140" height="120" viewBox="0 0 140 120" fill="none"><rect x="10" y="58" width="120" height="52" fill="#c8b8d8" rx="4"/><rect x="20" y="38" width="100" height="28" fill="#b0a0c8" rx="3"/><rect x="28" y="40" width="18" height="14" fill="#d4c8e8" opacity="0.5" rx="1"/><rect x="94" y="40" width="18" height="14" fill="#d4c8e8" opacity="0.5" rx="1"/><rect x="48" y="63" width="44" height="47" fill="#8878a8" rx="2"/><circle cx="88" cy="87" r="3" fill="#c8b8e8"/><path d="M15 70 Q25 65 35 70 Q45 75 55 70" stroke="#a898c0" stroke-width="1.5" fill="none" opacity="0.5"/><path d="M85 70 Q95 65 105 70 Q115 75 125 70" stroke="#a898c0" stroke-width="1.5" fill="none" opacity="0.5"/></svg>`,
-            };
-            return svgs[r.id];
-        }
-
+        function isRumaAvailable(dateS) { return !BOOKINGS.includes(dateS); }
+        
         // ─── CALENDAR ─────────────────────────────────────
         let calYear = today.getFullYear(), calMonth = today.getMonth();
         const MONTHS_ID = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
@@ -2844,12 +2795,11 @@
                 const ds = dateStr(dt);
                 const isPast = dt < new Date(today.getFullYear(), today.getMonth(), today.getDate());
                 const isToday = ds === dateStr(today);
-                const bookedCount = ROOMS.filter(r => isBooked(r.id, ds)).length;
+                const avail = isRumaAvailable(ds);
                 let cls = 'cal-day';
                 if (isPast) cls += ' past';
                 else if (isToday) cls += ' today';
-                else if (bookedCount === ROOMS.length) cls += ' booked-all';
-                else if (bookedCount > 0) cls += ' partial';
+                else if (!avail) cls += ' booked-all';
                 const click = (!isPast) ? `onclick="selectDate('${ds}')"` : '';
                 grid.innerHTML += `<div class="${cls}" ${click}>${d}</div>`;
             }
@@ -2861,19 +2811,17 @@
             const [year, month, day] = ds.split('-').map(Number);
             const label = day + ' ' + MONTHS_ID[month - 1] + ' ' + year;
             document.getElementById('avail-date-title').textContent = label;
-            document.getElementById('avail-date-sub').textContent = 'Ketersediaan kamar pada tanggal ini:';
-            const cards = ROOMS.map(r => {
-                const avail = roomAvailOn(r.id, ds);
-                return `
+            document.getElementById('avail-date-sub').textContent = 'Status ketersediaan Griya Purnami:';
+            const avail = isRumaAvailable(ds);
+            const card = `
             <div class="room-avail-card ${avail ? 'available' : 'booked'}">
                 <div class="room-avail-info">
-                    <div class="room-avail-name">${r.name} <span style="font-size:11px;color:var(--muted);font-weight:300">${r.type}</span></div>
-                    <div class="room-avail-status ${avail ? 'status-ok' : 'status-no'}">${avail ? 'Tersedia — ' + r.priceLabel : 'Kamar sudah dipesan'}</div>
+                    <div class="room-avail-name">Griya Purnami <span style="font-size:11px;color:var(--muted);font-weight:300">${RUMAH.type}</span></div>
+                    <div class="room-avail-status ${avail ? 'status-ok' : 'status-no'}">${avail ? 'Tersedia — ' + RUMAH.priceLabel : 'Rumah sudah dipesan'}</div>
                 </div>
-                <button class="avail-book-btn" ${avail ? `onclick="openModal(${r.id},'${ds}')"` : ''} ${avail ? '' : 'disabled'}>${avail ? 'Pesan' : 'Penuh'}</button>
+                <button class="avail-book-btn" ${avail ? `onclick="openModal('${ds}')"` : ''} ${avail ? '' : 'disabled'}>${avail ? 'Pesan' : 'Penuh'}</button>
             </div>`;
-            }).join('');
-            document.getElementById('avail-cards').innerHTML = cards;
+            document.getElementById('avail-cards').innerHTML = card;
             document.querySelectorAll('.cal-day.selected').forEach(el => el.classList.remove('selected'));
             document.querySelectorAll('.cal-day:not(.empty)').forEach(el => { if (parseInt(el.textContent) === day && !el.classList.contains('past')) el.classList.add('selected'); });
         }
@@ -2882,31 +2830,26 @@
         document.getElementById('cal-next').addEventListener('click', () => { calMonth++; if (calMonth > 11) { calMonth = 0; calYear++; } renderCalendar(); });
 
         // ─── MODAL ────────────────────────────────────────
-        let activeRoom = null;
-        function openModal(roomId, prefillDate) {
-            activeRoom = ROOMS.find(r => r.id === roomId);
-            document.getElementById('modal-room-name').textContent = 'Pesan ' + activeRoom.name;
-            document.getElementById('modal-room-price').textContent = activeRoom.priceLabel;
-            document.getElementById('s-room').textContent = activeRoom.name;
+        function openModal(prefillDate) {
             document.getElementById('modal-form-wrap').style.display = '';
             document.getElementById('success-box').style.display = 'none';
             const base = prefillDate || dateStr(today);
-            document.getElementById('f-checkin').value = base;
+            document.getElementById('f-checkin').value = base + 'T00:00';
             const next = new Date(base + 'T00:00:00'); next.setDate(next.getDate() + 1);
-            document.getElementById('f-checkout').value = dateStr(next);
+            document.getElementById('f-checkout').value = dateStr(next) + 'T00:00';
+            document.getElementById('f-guests').value = '8';
             updateSummary();
             document.getElementById('modal').classList.add('open');
             document.body.style.overflow = 'hidden';
         }
 
         function updateSummary() {
-            if (!activeRoom) return;
             const ci = document.getElementById('f-checkin').value;
             const co = document.getElementById('f-checkout').value;
             if (ci && co) {
-                const nights = Math.max(1, Math.ceil((new Date(co + 'T00:00:00') - new Date(ci + 'T00:00:00')) / 86400000));
+                const nights = Math.max(1, Math.ceil((new Date(co) - new Date(ci)) / 86400000));
                 document.getElementById('s-nights').textContent = nights + ' malam';
-                document.getElementById('s-total').textContent = 'Rp ' + (activeRoom.price * nights).toLocaleString('id-ID');
+                document.getElementById('s-total').textContent = 'Rp ' + (RUMAH.price * nights).toLocaleString('id-ID');
             }
         }
 
@@ -2921,6 +2864,7 @@
             const phone = document.getElementById('f-phone').value.trim();
             const ci = document.getElementById('f-checkin').value;
             const co = document.getElementById('f-checkout').value;
+            const guests = document.getElementById('f-guests').value;
             if (!name || !phone || !ci || !co) { showToast('Lengkapi semua data terlebih dahulu'); return; }
 
             // Format datetime-local menjadi format yang jelas
@@ -2938,8 +2882,8 @@
             const ciFormatted = formatDateTime(ci);
             const coFormatted = formatDateTime(co);
             const nights = Math.max(1, Math.ceil((new Date(co) - new Date(ci)) / 86400000));
-            const total = (activeRoom.price * nights).toLocaleString('id-ID');
-            const msg = encodeURIComponent(`Halo  Griya,\n\nSaya ingin melakukan pemesanan kamar dengan detail berikut:\n\nNama: ${name}\nKamar: ${activeRoom.name}\nCheck-in: ${ciFormatted}\nCheck-out: ${coFormatted}\nDurasi: ${nights} malam\nNomor WhatsApp: ${phone}\nHarga per malam: Rp ${(activeRoom.price).toLocaleString('id-ID')}\nTotal Harga: Rp ${total}\n\nMohon konfirmasinya. Terima kasih.`);
+            const total = (RUMAH.price * nights).toLocaleString('id-ID');
+            const msg = encodeURIComponent(`Halo Griya,\n\nSaya ingin melakukan pemesanan rumah dengan detail berikut:\n\nNama: ${name}\nRumah: ${RUMAH.name}\nCheck-in: ${ciFormatted}\nCheck-out: ${coFormatted}\nDurasi: ${nights} malam\nJumlah Tamu: ${guests} orang\nNomor WhatsApp: ${phone}\nHarga per malam: ${RUMAH.priceLabel}\nTotal Harga: Rp ${total}\n\nMohon konfirmasinya. Terima kasih.`);
             window.open('https://wa.me/6285600934296?text=' + msg, '_blank');
             document.getElementById('modal-form-wrap').style.display = 'none';
             document.getElementById('success-box').style.display = 'block';
@@ -2958,7 +2902,6 @@
 
         // ─── INIT ─────────────────────────────────────────
         buildMasonries();
-        renderRooms();
         renderCalendar();
         setTimeout(() => {
             selectDate(dateStr(today));
